@@ -16,7 +16,7 @@ leftArrow.addEventListener('click', function () {
 
     if(posIndex < dLength && posIndex != 1) {  
         posIndex -= 1;
-        slide.src = './img/slide-' + posIndex + '.JPG';
+        slide.src = 'https://ahmedsmrt.github.io/Beauty-Store.github.io/img/slide-' + posIndex + '.JPG';
         document.querySelector('#dot-' + posIndex).classList.toggle('current-dot');
         document.querySelector('#dot-' + (posIndex+1)).classList.toggle('current-dot');
         
@@ -26,11 +26,11 @@ leftArrow.addEventListener('click', function () {
         posIndex -= 1;
         document.querySelector('#dot-' + (posIndex)).classList.toggle('current-dot');
         document.querySelector('#dot-' + (dLength)).classList.toggle('current-dot');
-        slide.src = './img/slide-' + posIndex + '.JPG';
+        slide.src = 'https://ahmedsmrt.github.io/Beauty-Store.github.io/img/slide-' + posIndex + '.JPG';
     } else if (posIndex == 1) {
         posIndex = dLength
         document.querySelector('#dot-' + (posIndex)).classList.toggle('current-dot');
-        slide.src = './img/slide-' + posIndex + '.JPG';
+        slide.src = 'https://ahmedsmrt.github.io/Beauty-Store.github.io//slide-' + posIndex + '.JPG';
         document.querySelector('#dot-' + (1)).classList.toggle('current-dot');
     }
 
@@ -54,7 +54,7 @@ rightArrow.addEventListener('click', function () {
 
     if(posIndex < dLength) {  
         posIndex += 1;
-        slide.src = './img/slide-' + posIndex + '.JPG';
+        slide.src = 'https://ahmedsmrt.github.io/Beauty-Store.github.io/img/slide-' + posIndex + '.JPG';
         document.querySelector('#dot-' + posIndex).classList.toggle('current-dot');
         document.querySelector('#dot-' + (posIndex-1)).classList.toggle('current-dot');
         
@@ -62,7 +62,7 @@ rightArrow.addEventListener('click', function () {
         document.querySelector('#dot-' + (dLength)).classList.toggle('current-dot');
         posIndex = 1;
         document.querySelector('#dot-' + (posIndex)).classList.toggle('current-dot');
-        slide.src = './img/slide-' + posIndex + '.JPG';
+        slide.src = 'https://ahmedsmrt.github.io/Beauty-Store.github.io/img/slide-' + posIndex + '.JPG';
 
     } 
  
