@@ -10,13 +10,11 @@ prod1.addEventListener("mouseover", function( ) {
     // highlight the mouseover target
     prod1.style.transition = ".7s";
     prod1.style.top ='-75%';
-    prod1.style.background = "url(../img/prod-after-img.jpg) center center/cover";
 
 
     // reset the color after a short delay
     setTimeout(function() {
         prod1.style.top ='-25%';
-        prod1.style.background = 'url(../img/lashes-3.JPG) center center/cover';
         
     }, 1500);
   }, false);
@@ -25,12 +23,10 @@ prod1.addEventListener("mouseover", function( ) {
     // highlight the mouseover target
     prod2.style.transition = ".7s";
     prod2.style.top ='-75%';
-    prod2.style.background = "url(../img/prod-after-img.jpg) center center/cover";
 
     // reset the color after a short delay
     setTimeout(function() {
         prod2.style.top ='-25%';
-        prod2.style.background = 'url(../img/lashes-3.JPG) center center/cover';
 
     }, 1200);
   }, false);
@@ -39,12 +35,10 @@ prod1.addEventListener("mouseover", function( ) {
     // highlight the mouseover target
     prod3.style.transition = ".7s";
     prod3.style.top ='-75%';
-    prod3.style.background = "url(../img/prod-after-img.jpg) center center/cover";
 
     // reset the color after a short delay
     setTimeout(function() {
         prod3.style.top ='-25%';
-        prod3.style.background = 'url(../img/lashes-3.JPG) center center/cover';
 
     }, 1200);
   }, false);
@@ -53,12 +47,10 @@ prod1.addEventListener("mouseover", function( ) {
     // highlight the mouseover target
     prod4.style.transition = ".7s";
     prod4.style.top ='-75%';
-    prod4.style.background = "url(../img/prod-after-img.jpg) center center/cover";
 
     // reset the color after a short delay
     setTimeout(function() {
         prod4.style.top ='-25%';
-        prod4.style.background = 'url(../img/lashes-3.JPG) center center/cover';
 
     }, 1200);
   }, false);
@@ -67,12 +59,10 @@ prod1.addEventListener("mouseover", function( ) {
     // highlight the mouseover target
     prod5.style.transition = ".7s";
     prod5.style.top ='-75%';
-    prod5.style.background = "url(../img/prod-after-img.jpg) center center/cover";
 
     // reset the color after a short delay
     setTimeout(function() {
         prod5.style.top ='-25%';
-        prod5.style.background = 'url(../img/lashes-3.JPG) center center/cover';
 
     }, 1200);
   }, false);
@@ -81,12 +71,10 @@ prod1.addEventListener("mouseover", function( ) {
     // highlight the mouseover target
     prod6.style.transition = ".7s";
     prod6.style.top ='-75%';
-    prod6.style.background = "url(../img/prod-after-img.jpg) center center/cover";
 
     // reset the color after a short delay
     setTimeout(function() {
         prod6.style.top ='-25%';
-        prod6.style.background = 'url(../img/lashes-3.JPG) center center/cover';
 
     }, 1200);
   }, false);

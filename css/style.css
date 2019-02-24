@@ -324,8 +324,10 @@ body, html {
 .prod-1:hover::before {
     transition: 1.2s;
     display: block;
-    background: url(../img/prod-after-img.jpg) center center/cover;
+}
 
+.prod-1:hover {
+    background: url(../img/prod-after-img.jpg) center center/cover;
 }
 
 @keyframes btnhover2 {
@@ -368,6 +370,11 @@ body, html {
     display: block;
     background: url(../img/prod-after-img.jpg) center center/cover;
 }
+
+.prod-2:hover {
+    background: url(../img/prod-after-img.jpg) center center/cover;
+}
+
 .prod-3 {
     background: url(../img/lashes-3.JPG) center center/cover;
 
@@ -397,6 +404,10 @@ body, html {
     background: url(../img/prod-after-img.jpg) center center/cover;
 }
 
+.prod-3:hover {
+    background: url(../img/prod-after-img.jpg) center center/cover;
+}
+
 .prod-4 {
     background: url(../img/lashes-6.JPG) center center/cover;
 
@@ -423,6 +434,10 @@ body, html {
 .prod-4:hover::before {
     transition: 1.2s;
     display: block;
+    background: url(../img/prod-after-img.jpg) center center/cover;
+}
+
+.prod-4:hover {
     background: url(../img/prod-after-img.jpg) center center/cover;
 }
 
@@ -456,6 +471,9 @@ body, html {
     background: url(../img/prod-after-img.jpg) center center/cover;
 }
 
+.prod-5:hover {
+    background: url(../img/prod-after-img.jpg) center center/cover;
+}
 
 .prod-6 {
     background: url(../img/lashes-6.JPG) center center/cover;
@@ -484,9 +502,11 @@ body, html {
     transition: 1.2s;
     display: block;
     background: url(../img/prod-after-img.jpg) center center/cover;
-
 }
 
+.prod-6:hover {
+    background: url(../img/prod-after-img.jpg) center center/cover;
+}
 
 /* Lashes intro page */
 #hair-intro {
