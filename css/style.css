@@ -27,159 +27,80 @@ body, html {
 .land-page {
     width: 100%;
     height: 100%;
-    background: url(../img/bg-land5.jpg) left center/cover fixed;
-
-}
-
-
-/* Product Square */
-#product-container {
     position: relative;
-    overflow: hidden;
-    width: 25%;
-    height: 30rem;
-    float: left;
-    transform: translate(1.5rem,8rem);
-    border-radius: .2rem;    
+    background: url(../img/bg-land5.jpg) right center/cover fixed;
 }
 
-#product-container h1 {
-    color: #222;
-    z-index: 4;
-
-}
-
-#product-bg {
+#l-head-contain {
     position: relative;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    border: #222 2px solid;
-    z-index: 5;
-    opacity: .6;
-    background: #F5B7B1
+    width: 35%;
+    left: 64%;
+    top: 32%;
 }
 
-
-#product-container .nav-modern {
-    position: relative;
-    width: 100%;
-    height: 100%;
+#l-head-contain h1 {
+    font-size: 3.5rem;
+    padding: 1%;
+    color: white;
     font-weight: 900;
-    z-index: 6;
-    transform: translateY(-100%);
 }
 
-#product-container .nav-modern  h1{
-   text-align: center;
-   padding-top: 1rem;
+#l-head-contain p {
+    padding: 8%;
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    line-height: 1.8rem;
 }
 
-#product-container .nav-modern  h1:hover{
+#l-head-contain a {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    position: relative;
+    left: 32%;
+    border: 2px #1C2833 solid;
+    width: 38%;
+    padding: 2%;
+    border-radius: 5%;
+    z-index: 2;
+}
+
+#l-head-contain a:hover {
     transition: .1s;
-    color: #2874A6;
-    font-weight: bolder;
-    transform: scale(1.01);
- }
-
-
- #product-container .nav-modern .btn-light {
-     position: relative;
-     display: none;
-     text-align: center;
-     background: #222;
-     color: #D6EAF8;
-     padding: 1rem 1rem;
-     width: 100%;
-    transform: translateY(4.6rem);
- }
- 
-
- #product-container .nav-modern .current-btn {
-     display: inline-block;
- }
- #product-container .nav-modern .current-btn:hover {
-    transition: .5s;
+    color: whitesmoke;
+    font-weight: 900;
 }
 
-#product-container .nav-modern .img-contain {
-    position: relative;
-    float: center;
-    height: 15rem;
+
+#l-head-contain a::after {
+    content: "";
     width: 100%;
-    font-family: 'Times New Roman', Times, serif;
-    left: 3%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .5;
+    display: none;
 }
 
-#product-container .nav-modern .img-contain a{
-    position: relative;
-    top: -50%;
-    font-size: 3rem;
-    color: #333;
-}
-
-#product-container .nav-modern .img-contain .left-arrow:hover {
+#l-head-contain a:hover::after {
+    animation: btnhover1 .75s ease-in-out 0s 1 normal forwards;
     display: inline-block;
-    transition: .5s;
-    transform: translateX(-.4rem);
-    color: #21618C;
-}
-#product-container .nav-modern .img-contain .right-arrow:hover {
-    display: inline-block;
-    transition: .5s;
-    transform: translateX(.4rem);
-    color: #21618C;
+    
 }
 
-
-#product-container .nav-modern .img-contain img {
-    top: .5rem;
-    display: inline-block;
-    position: relative;
-    width: 70%;
-    height: 130%;
-    z-index: 10;
-    background: #D6EAF8;
-    border-radius: 2%;
-}
-
-#product-container .nav-modern .img-contain .current-slide {
-    position: relative;
-    left: 0rem;
-    transition: 1s;
-    transform: translateX(2rem);
-}
-
-
-#product-container .nav-modern .dot-contain {
-    position: relative;
-    top: 5.5rem;
-    z-index: 50;
-    height: 2rem;
-    width: 100%;
-    padding: 1 1rem;
-
-}
-
-#product-container .nav-modern .dot-contain .dot {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    display: inline-block;
-    left: 38%;
-    position: relative;
-}
-#product-container .nav-modern .dot-contain .dot {
-    border: #222 solid 1px;
-}
-
-#product-container .nav-modern .dot-contain .dot:hover {
-    cursor: pointer;
-    background: #3498DB;
-}
-
-#product-container .nav-modern .dot-contain .current-dot {
-    background: #2E86C1;
+@keyframes btnhover1 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+        background: #EC7063;
+    }
 }
 
 
@@ -202,24 +123,18 @@ body, html {
     position: fixed;
     height: 3rem;
     z-index: 3;
-    
-}
-
-.land-page nav:hover {
-    background: #222;
     opacity: .7;
     border-bottom: #D6EAF8 1px solid;
-    z-index: 2;
-    transition: .3s;
+    background: #222;
+
 }
+
 .land-page nav:hover #second li a {
     color: #D6EAF8;
 }
 .land-page nav:hover #first li a {
     color: #D6EAF8;
 }
-
-
 
 .land-page nav #first {
     float: left;
@@ -251,7 +166,7 @@ body, html {
 }
 
 .land-page nav #second li a {
-    color: black;
+    color: #D6EAF8;
     font-size: 1.2rem;
     font-weight: 800;
 
@@ -302,119 +217,519 @@ body, html {
     position: relative;
 }
 
-
-
-
-
-
-/*New Product Section */
-
-#new-products-container {
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-    background: #FBFCFC;
-}
-
-
-#new-products {
-    background: #F5B7B1;
-    height: 100%;
-    width: 100%;
-    border-top-right-radius: 75%;
-}
-
-#new-products-container h1 {
+/* Second Page */
+#prod-carousel {
     position: relative;
-    font-size: 3.5rem;
-    float: right;
-    transform: translate(-6rem, 13.5rem) rotate(33deg);
-    transition: 1s;
+    width: 100%;
+    height: 40vh;
+    background: url(../img/bg-land5.jpg) center center/cover fixed;
 }
-#new-products-container h1:hover {
-    transition: 1s;
-    transform: translate(-6rem, 8rem) rotate(30deg);
-    color: #ABEBC6;
+.prod-messg {
+    background: #FDFEFE;
+    height: 35%;
+    top: -15%;
+    position: relative;
 }
 
-#new-products .prod-info {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: translate(5%,25%);
+.prod-messg p {
+    font-size: 2rem;
     text-align: center;
+    font-weight: 900;
+    font-style: italic;
+    padding: 2%;
+    border-top: 2px solid salmon;
+    border-bottom: 2px solid salmon;
+
+}
+
+.carousel-container {
+    height: 80%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    background: white;
+    background: url(../img/bg-land5.jpg) center center/cover fixed;
+}
+
+.container-p {
+    flex:1;
+    position: relative;
+}
+
+.container-p .cost {
+    position: relative;
+    display: block;
+    text-align: center;
+    transform: translateY(-60%);
+    display: flex;
+    flex-direction: column;
+}
+
+.container-p h1 {
+    padding: 1.6% 2% 1.6% 2%;
+    position: relative;
+    display: inline-block;
+    background: rgba(250, 219, 216, .7);
+    margin: 1%;
     width: 50%;
-    height: 50%;
+    left: 23%;
+}
+
+.container-p a {
+    background: #2E86C1;
+    color: white;
+    padding: 5% 8% 5% 8%;
+    border-radius: 5%;
+    margin: 2%;
+}
+
+.prod {
+    flex: 1;
+    position: relative;
     border-radius: 50%;
-    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 95%;
+    margin: 1%;
+    border: 1px solid black;
+    top: -25%;
 
 }
 
-#new-products .prod-info h2 {
-    font-size: 3rem;
-    padding: 1rem;
-}
-
-#new-products .prod-info p {
-    font-size: 1rem;
-    padding: 1rem;
-    line-height: 2rem;
-    color: #1C2833;
+.prod-1:hover + .container-p h1 {
+    color: gold;
 }
 
 
-#new-products .prod-info .prod-img-contain {
-    width: 100vw;
-    height: 30vh;
-  
+.prod-1 {
+    background: url(../img/lashes-3.JPG) center center/cover;
+}
+.prod-1:before {
+    content: "Eyebrow Name 1";
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    top: -20%;
+    color: black;
+    transform: skewY(2);
+    display: inline-block;
+    text-align: center;
+    font-weight: 900;
+    display: none;
+    font-size: 1.2rem;  
+    border-radius: 10%;
+    animation: btnhover2 .5s ease-in-out 0s 1 normal forwards;
+    left: 9%;
+}
+
+.prod-1:hover::before {
+    transition: 1.2s;
+    display: block;
+}
+
+@keyframes btnhover2 {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+        background: rgba(245, 183, 177, .7);
+        color: #515A5A;
+    }
+}
+
+.prod-2 {
+    background: url(../img/lashes-6.JPG) center center/cover;
 
 }
 
-#new-products .prod-info .prod-img-contain .prod-cost-info {
-    padding-top: 2rem;
-    padding-left: 1.3rem;
+.prod-2:before {
+    content: "Eyebrow Name 2";
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    top: -20%;
+    color: black;
+    transform: skewY(2);
+    display: inline-block;
+    text-align: center;
+    font-weight: 900;
+    display: none;
+    font-size: 1.2rem;  
+    border-radius: 10%;
+    animation: btnhover2 .5s ease-in-out 0s 1 normal forwards;
+    left: 9%;
 }
 
-#new-products .prod-info .prod-img-contain .prod-cost-info i {
-    color: #1F618D;
+.prod-2:hover::before {
+    transition: 1.2s;
+    display: block;
+}
+.prod-3 {
+    background: url(../img/lashes-3.JPG) center center/cover;
+
 }
 
-#new-products #prod-viewport {
-    width: 20rem;
-    height: 25rem;
-    border: #222 solid 1px;
-    float: right;
+.prod-3:before {
+    content: "Eyebrow Name 3";
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    top: -20%;
+    color: black;
+    transform: skewY(2);
+    display: inline-block;
+    text-align: center;
+    font-weight: 900;
+    display: none;
+    font-size: 1.2rem;  
+    border-radius: 10%;
+    animation: btnhover2 .5s ease-in-out 0s 1 normal forwards;
+    left: 9%;
+}
+
+.prod-3:hover::before {
+    transition: 1.2s;
+    display: block;
+}
+
+.prod-4 {
+    background: url(../img/lashes-6.JPG) center center/cover;
+
+}
+
+.prod-4:before {
+    content: "Eyebrow Name 4";
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    top: -20%;
+    color: black;
+    transform: skewY(2);
+    display: inline-block;
+    text-align: center;
+    font-weight: 900;
+    display: none;
+    font-size: 1.2rem;  
+    border-radius: 10%;
+    animation: btnhover2 .5s ease-in-out 0s 1 normal forwards;
+    left: 9%;
+}
+
+.prod-4:hover::before {
+    transition: 1.2s;
+    display: block;
+}
+
+.prod-5 {
+    background: url(../img/lashes-3.JPG) center center/cover;
+
+}
+
+.prod-5:before {
+    content: "Eyebrow Name 5";
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    top: -20%;
+    color: black;
+    transform: skewY(2);
+    display: inline-block;
+    text-align: center;
+    font-weight: 900;
+    display: none;
+    font-size: 1.2rem;  
+    border-radius: 10%;
+    animation: btnhover2 .5s ease-in-out 0s 1 normal forwards;
+    left: 9%;
+}
+
+.prod-5:hover::before {
+    transition: 1.2s;
+    display: block;
+    z-index: 5;
+}
+
+
+.prod-6 {
+    background: url(../img/lashes-6.JPG) center center/cover;
+
+}
+
+.prod-6:before {
+    content: "Eyebrow Name 6";
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    top: -20%;
+    color: black;
+    transform: skewY(2);
+    display: inline-block;
+    text-align: center;
+    font-weight: 900;
+    display: none;
+    font-size: 1.2rem;  
+    border-radius: 10%;
+    animation: btnhover2 .5s ease-in-out 0s 1 normal forwards;
+    left: 9%;
+}
+
+.prod-6:hover::before {
+    transition: 1.2s;
+    display: block;
+}
+
+
+/* Lashes intro page */
+#hair-intro {
+    width: 100%;
+    height: 45vh;
+    background: #FDFEFE;
+    display: flex;
+    
+}
+
+#hair-intro h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 15%;
+    z-index: 3;
+    color: white;
+    position: relative;
+
+}
+
+#hair-intro p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1%;
+    font-weight: 900;
+    z-index: 2;
+    position: relative;
+    color: white;
+}
+.unit-intro {
+    flex: 1;
+    background: url(../img/hair-intro.jpg) center center/cover;
+    margin: 1.2% 0 1.2% .6%;
+    position: relative;
+}
+
+.unit-intro:before {
+    content: "";
+    position: absolute;
+    background: #222;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
+    opacity: .6;
+    z-index: 0;
+}
+
+.unit-intro:hover:before {
+    content: "";
+    position: absolute;
+    background: #222;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .6;
+    z-index: 0;
+    animation: flashIn2 .8s ease-in-out 0s 1 normal forwards;
+}
+
+.lashes-intro {
+    flex: 1;
+    margin: 1.2% .6% 1.2% 0;
+    background: url(../img/lashes-2.JPG) center center/cover;
     position: relative;
-    transform: translate(-100%,-30%);
-    visibility: hidden;
+    overflow: hidden;
+}
+.lashes-intro:before {
+    content: "";
+    position: absolute;
+    background: #222;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .6;
+    z-index: 0;
 }
 
-#new-products .prod-info .img img{
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    border: 2px #222 dashed;
-    margin-left: 1rem;
+.lashes-intro:hover:before {
+    content: "";
+    position: absolute;
+    background: #222;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .6;
+    z-index: 0;
+    animation: flashIn .8s ease-in-out 0s 1 alternate forwards;
 }
 
-#new-products .prod-info .img {
-    float: left;
+@keyframes flashIn {
+    25% {
+        left: -100%;
+        background: pink;
+        
+    }
+
+    50% {
+        background: rgb(240, 143, 159);
+    }
+
+    100% {
+        left: 0%;
+        background: #D98880;
+
+    }
+}
+@keyframes flashIn2 {
+    25% {
+        left: 100%;
+        background: lightblue;
+        
+    }
+
+    50% {
+        background: rgb(118, 167, 199);
+    }
+
+    100% {
+        left: 0%;
+        background: rgb(98, 161, 202);
+
+    }
+}
+/* Best Sellers */
+#best-h1 {
     text-align: center;
-    padding: 0 2rem;
+    height: 8vh;
+    font-weight: 900;
+    font-size: 3rem;
 }
 
-#new-products .prod-info .img img:hover {
-    transform: scale(1.2);
-    transition: .4s;    
+#best-sellers {
+    width: 100%;
+    height: 75vh;
+    background: white;
+    display: flex;
 }
 
-#new-products .prod-info .img a {
+
+.best-containers {
+    flex: 1;
+    margin: .5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.best-img {
+    flex: 4;
+    background: url(../img/lashes-3.JPG) center center/cover;
+}
+
+.best-img:hover {
+    transition: .6s;
+    background: url(../img/prod-after-img.jpg) center center/cover;
+
+}
+
+.best-cost {
+    flex: 1;
+    background:;
+    text-align: center;
+}
+
+.best-cost h1 {
+    padding-top: 2%;
+    font-size: 1.2rem;
+    padding-bottom: 1.5%;
+}
+
+.best-cost p {
+    float: right;
     position: relative;
-    float: center;
-    font-size: 15px;
-    color: #ABEBC6;
+    left: -10%;
+    font-weight: 900;
+}
+
+.best-cost i {
+    color: #F1C40F;
+}
+
+.best-btn {
+    background:;
+    flex: .5;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.best-btn-link {
+    display: inline-block;
+    padding: 5% 15% 5% 15%;
+    font-size: 1.15rem;
+    color: #222;
+    text-align: center;
+    font-weight: 900;
+    background: #EC7063;
+    border-radius: 3%;
+    
+}
+
+
+/* Testimonials */
+#testimonials {
+    width: 100%;
+    height: 10vh;
+    background: white;
+}
+
+#testimonials h1 {
+    font-size: 3rem;
+    text-align: center;
+    border-top: 2px dashed lightblue;
+    border-bottom: 2px dashed lightblue;
+    font-weight: 900;
+}
+
+/* Third Page */
+
+#section-partition {
+    width: 100%;
+    height: 50vh;
+    background: url(../img/bg-land5.5.jpg) center center/cover fixed;
+}
+
+#section-contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#section-contain .lashes {
+    flex: 2;
+    background: url(../img/btn-1.jpeg) center center/cover;
+}
+
+#section-contain .l-info {
+    flex: 1;
+    background: #FADBD8;
+    display: flex;
+    flex-direction: column;
+}
+
+#section-contain .l-info h1 {
+    flex: 1;
+    padding: 2%;
 }
 
 
@@ -425,6 +740,7 @@ body, html {
     width: 100%;
     height: 50vh;
     background: #FBFCFC;
+    padding: 1%;
 }
 
 #lash-prod {
@@ -452,39 +768,12 @@ body, html {
     color: #ABEBC6;
 }
 
-#lash-prod .prod-info {
-    position: relative;
-    top: 0;
-    left: 0;
-    text-align: center;
-    width: 35%;
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    float: right;
-
-}
-
-#lash-prod .prod-info h2 {
-    font-size: 2rem;
-    padding: .5rem;
-}
-
-#lash-prod .prod-info p {
-    font-size: 1rem;
-    padding: 1rem;
-    line-height: 2rem;
-    color: #1C2833;
-}
-
 
 #lash-prod  .prod-img-contain {
-    width: 65%;
+    width: 100%;
     height: 100%;
     position: relative;
     float: left;
-}
-
-#lash-prod  .prod-img-contain .prod-cost-info {
 }
 
 #lash-prod  .prod-img-contain .prod-cost-info i {
@@ -493,19 +782,16 @@ body, html {
 
 
 #lash-prod  .img img{
-    border-radius: 2%;
-    width: 95%;
-    height: 98%;
+    width: 100%;
+    height: 100%;
 }
 
 #lash-prod .img .img-overlay .bg{
     position: absolute;
     background: #222;
-    width: 95%;
-    height: 98%;
-    left: 2.5%;
+    width: 100%;
+    height: 100%;
     opacity: .7;
-    border-radius: 2%;
 }
 
 #lash-prod .img .img-overlay .bg a {
@@ -536,7 +822,7 @@ body, html {
     position: relative;
     float: left;
     text-align: center;
-    width: 33%;
+    width: 33.33333333%;
     height: 100%;
 }
 
